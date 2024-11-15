@@ -1,4 +1,7 @@
-name: Pylint
+steps:
+- run: npm publish
+  if: github.event_name == 'push'
+  name: Pylint
 
 on: [push]
 
